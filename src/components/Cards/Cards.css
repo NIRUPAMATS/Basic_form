@@ -1,0 +1,52 @@
+#growth {
+  overflow-y: scroll;
+ }
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 3rem;
+  }
+.cards{
+  overflow-y: scroll;
+}
+.card {
+  margin-right: 15px;
+  padding: 13px;
+  max-width: 222px;
+  width: 222px;
+  height: 270px;
+  display: inline-block;
+  cursor: pointer;
+  border-color: black;
+  border-width: 2rem;
+
+}
+
+.card .image {
+  padding-left: 13rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .content .rate {
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .card .content .kilometer {
+    font-size: medium;
+  }
+  .card .content .name {
+    font-size: small;
+  }
+  .card .date {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+  }
+  

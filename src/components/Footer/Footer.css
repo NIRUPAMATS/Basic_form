@@ -1,0 +1,35 @@
+.footerParentDiv {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footerParentDiv .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ebeeef;
+  padding: 16px;
+}
+.footerParentDiv .content .heading {
+  font-size: 24px;
+  font-weight: bolder;
+  color: rgb(12, 0, 123);
+}
+
+.footerParentDiv .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(90deg,rgb(76, 57, 252)0%,rgb(113, 222, 219)100%);
+  color: whitesmoke;
+}
+
+.footerParentDiv .footer p {
+  margin: 0;
+}
+.list{
+  color: rgb(35, 49, 141);
+}
