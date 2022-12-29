@@ -49,4 +49,8 @@
     justify-content: flex-end;
     font-size: small;
   }
+
+ .image img {
+    height: 200px;;
+  }
   
