@@ -6,9 +6,9 @@ import Cards from "../components/Cards/Cards";
 function Home(){
     return(
         <div>
-           < Navbar/>
+           <Navbar/>
            <Cards/>
-           < Footer/>
+           <Footer/>
         </div>
     );
 }

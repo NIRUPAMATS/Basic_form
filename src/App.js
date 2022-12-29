@@ -3,14 +3,18 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Signup/Signup";
+import './App.css';
 export default function App() {
   
   return (
-    
+    <div className="App">
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/signup"  exact element={<Signup/>}/>
+         <Route path="/" element={<Home/>}/>
+         <Route path="/signup"  exact element={<Signup/>}/> 
+         <Route path="/login"  exact element={<Login/>}/> 
       </Routes>
+    </div>
+    
     
   );
 }

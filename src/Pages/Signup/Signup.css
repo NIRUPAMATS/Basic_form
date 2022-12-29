@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-body {
+.body {
   background: linear-gradient(90deg,rgb(85, 111, 255)0%,rgb(113, 222, 219)100%);
   display: flex;
   min-height: 90vh;
@@ -41,7 +41,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-span {
+.form-container span {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: red;

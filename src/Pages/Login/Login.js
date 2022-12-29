@@ -20,6 +20,7 @@ const handleSubmit=(event)=>{
   setSubmitted(true)
 }
   return (
+    <div className="body">
     <div class="form-container">
       <form class="register-form" onSubmit={handleSubmit}>
         
@@ -54,6 +55,7 @@ const handleSubmit=(event)=>{
           </Link>
           
       </form>
+    </div>
     </div>
   );
 }
