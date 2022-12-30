@@ -47,6 +47,7 @@ const handleSubmit=(event)=>{
           name="password"
         />
           {submitted && !values.password? <span>Please enter password</span>: null}
+<<<<<<< HEAD
         
 
           <Link to="/home">
@@ -58,6 +59,16 @@ const handleSubmit=(event)=>{
           <Link to="/signup" className="form-field">
           Don't have an account?
           </Link>
+=======
+         <Link className="form-field link-button" to="/signuo"
+         >Log In</Link>
+   
+          {/* <Link to="/signup" className="form-field">
+          <button className="form-field" type="button">
+          Log In
+          </button>
+          </Link> */}
+>>>>>>> 5af1c3f438c2ea36b2d8d9057f7699cc33fdb633
           
       </form>
     </div>
