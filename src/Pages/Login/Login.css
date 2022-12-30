@@ -43,6 +43,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+.link-button{
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(90deg,rgb(76, 57, 252)0%,rgb(113, 222, 219)100%);
+  color: white;
+  cursor: pointer;
+}
 .form-container span {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
