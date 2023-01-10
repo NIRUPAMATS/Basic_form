@@ -29,9 +29,12 @@ class Navbar extends React.Component{
                         )
                     })}
                 </ul>
-                <Link to ='/'>
-                <button className='logout' >Log Out</button>
-                </Link>
+                
+                <button onClick={()=>{
+                    localStorage.clear();
+                    window.location.replace("/")
+                }} className='logout' >Log Out</button>
+                
             </nav>
         )
     }
