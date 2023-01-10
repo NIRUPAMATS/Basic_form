@@ -1,11 +1,13 @@
+import { async } from "q";
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
+import postrequest from "../../Backend/postrequest";
 import './Login.css';
 
 export default function Login() {
   const [values,setValues]=useState({
     email:"",
-    password:"",
+    pass:"",
 })
 const [submitted,setSubmitted]=useState(false)
 
@@ -13,11 +15,21 @@ const inputEmail=(event)=>{
   setValues({...values,email:(event.target.value)})
 }
 const inputPassword=(event)=>{
-    setValues({...values,password:(event.target.value)})
+    setValues({...values,pass:(event.target.value)})
   }
-const handleSubmit=(event)=>{
+const handleSubmit=async(event)=>{
   event.preventDefault()
   setSubmitted(true)
+  //console.log(values)
+  const{retdata:retdata}=await postrequest(`${window.name}login`,values)
+  console.log(retdata.status)
+   if(retdata.status==="Success")
+   {
+    window.location.replace('/home')
+   }
+   else{
+    //ninghla endaan vecha kaatiko
+   }
 }
 
 
@@ -48,14 +60,19 @@ const handleSubmit=(event)=>{
           placeholder="Password"
           name="password"
         />
-          {submitted && !values.password? <span>Please enter password</span>: null}
+          {submitted && !values.pass? <span>Please enter password</span>: null}
         
 
+<<<<<<< HEAD
           <Link to="/home">
           <button class="form-field" type="button" >
+=======
+          
+          <button class="form-field" type="submit">
+>>>>>>> 4c229a2b173cb62ac14b67a76c1ca8bbdc0debc9
           Log In
           </button>
-          </Link>
+          
 
           <Link to="/signup" className="form-field">
           Don't have an account?
