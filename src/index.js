@@ -4,8 +4,10 @@ import History from './Pages/History/History'
 import Dashboard from './Pages/Dashboard/Dashboard'
 import App from './App';
 import { BrowserRouter as Router} from 'react-router-dom';
+import reportWebVitals from './reportWebVitals';
 //import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+window.name="http://localhost:8000/"
 root.render(
   <Router>
     <App />
