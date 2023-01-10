@@ -19,6 +19,8 @@ const handleSubmit=(event)=>{
   event.preventDefault()
   setSubmitted(true)
 }
+
+
   return (
     <div className="body">
     <div class="form-container">
@@ -50,7 +52,7 @@ const handleSubmit=(event)=>{
         
 
           <Link to="/home">
-          <button class="form-field" type="button">
+          <button class="form-field" type="button" >
           Log In
           </button>
           </Link>
