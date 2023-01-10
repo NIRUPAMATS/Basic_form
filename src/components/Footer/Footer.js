@@ -8,25 +8,23 @@ function Footer() {
       <div className="content">
         <div>
           <div className="heading">
-            <p>POPULAR LOCATIONS</p>
+            <p>Popular Locations</p>
           </div>
           <div className="list">
             <ul>
               <li>kolkata</li>
               <li>Mumbai</li>
               <li>Chennai</li>
-              <li>Pune</li>
             </ul>
           </div>
         </div>
         <div>
           <div className="heading">
-            <p>ABOUT US</p>
+            <p>About Us</p>
           </div>
           <div className="list">
             <ul>
               <li>About Hotellia Group</li>
-              <li>Careers</li>
               <li>Contact Us</li>
               <li>HotelliaPeople</li>
             </ul>
@@ -47,7 +45,7 @@ function Footer() {
       </div>
       <div className="footer">
         <p>Other Countries Pakistan - South Africa - Indonesia</p>
-        <p>Free Classifieds in India. © 2006-2021 OLX</p>
+        <p>Free Classifieds in India. © 2006-2023 Hotellia</p>
       </div>
     </div>
   );

@@ -4,25 +4,122 @@ import './Cards.css'
 function Cards(){
     return(
       
-        <div className="recommendations">
+        <div className="card-body">
         <div className="heading">
           <span>Our Rooms</span>
         </div>
         <div className="cards">
+
           <div className="card">
+          <div className="content">
+           
             <div className="image">
               <img src="../../../Images/delux-room.jpg" alt="" />
             </div>
-            <div className="content">
-              <p className="rate">&#x20B9; 250000</p>
-              <span className="kilometer">Two Wheeler</span>
-              <p className="name"> YAMAHA R15V3</p>
+            
+              <p className="category">Business AC Room</p>
+              <span className="bed">Normal</span>
+              <p className="price">&#x20B9; 2600/per night</p>
+
+              <div className="button-book">
+              <button className="book">Book Now!</button>
             </div>
-            <div className="date">
-              <span>10/5/2021</span>
-            </div>
+
+          </div>
           </div>
           
+          <div className="card">
+          <div className="content">
+           
+            <div className="image">
+              <img src="../../../Images/delux-room.jpg" alt="" />
+            </div>
+            
+              <p className="category">Business AC Room</p>
+              <span className="bed">Large Room</span>
+              <p className="price">&#x20B9; 3000/per night</p>
+
+              <div className="button-book">
+              <button className="book">Book Now!</button>
+            </div>
+
+          </div>
+          </div>
+          
+          <div className="card">
+          <div className="content">
+           
+            <div className="image">
+              <img src="../../../Images/delux-room.jpg" alt="" />
+            </div>
+            
+              <p className="category">Common AC Room</p>
+              <span className="bed">Single Bed</span>
+              <p className="price">&#x20B9; 1500/per night</p>
+
+              <div className="button-book">
+              <button className="book">Book Now!</button>
+            </div>
+
+          </div>
+          </div>
+          
+          <div className="card">
+          <div className="content">
+           
+            <div className="image">
+              <img src="../../../Images/delux-room.jpg" alt="" />
+            </div>
+            
+              <p className="category">Common AC Room</p>
+              <span className="bed">Double Bed</span>
+              <p className="price">&#x20B9; 2100/per night</p>
+
+              <div className="button-book">
+              <button className="book">Book Now!</button>
+            </div>
+
+          </div>
+          </div>
+          
+          <div className="card">
+          <div className="content">
+           
+            <div className="image">
+              <img src="../../../Images/delux-room.jpg" alt="" />
+            </div>
+            
+              <p className="category">Common Non AC Room</p>
+              <span className="bed">Single Bed</span>
+              <p className="price">&#x20B9; 1100/per night</p>
+
+              <div className="button-book">
+              <button className="book">Book Now!</button>
+            </div>
+
+          </div>
+          </div>
+          
+          <div className="card">
+          <div className="content">
+           
+            <div className="image">
+              <img src="../../../Images/delux-room.jpg" alt="" />
+            </div>
+            
+              <p className="category">Common Non AC Room</p>
+              <span className="bed">Double Bed</span>
+              <p className="price">&#x20B9; 1800/per night</p>
+
+              <div className="button-book">
+              <button className="book">Book Now!</button>
+            </div>
+
+          </div>
+          </div>
+
+          
+
         </div>
       </div>
     );

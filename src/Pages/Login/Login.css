@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .body {
+  height: 650px;;
   background: linear-gradient(90deg,rgb(85, 111, 255)0%,rgb(113, 222, 219)100%);
   display: flex;
   min-height: 100vh;

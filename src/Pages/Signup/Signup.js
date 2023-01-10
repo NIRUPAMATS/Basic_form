@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import './Signup.css';
 
 export default function Signup() {
@@ -77,9 +78,11 @@ const handleSubmit=(event)=>{
         />
           {submitted && !values.password? <span>Please enter password</span>: null}
         
+          <Link to="/home">
           <button class="form-field" type="submit">
           Sign Up
         </button>
+          </Link>
       </form>
     </div>
     </div>
