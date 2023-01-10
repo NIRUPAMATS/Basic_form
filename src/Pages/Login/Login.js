@@ -50,11 +50,7 @@ const handleSubmit=(event)=>{
          <Link className="form-field link-button" to="/signuo"
          >Log In</Link>
    
-          {/* <Link to="/signup" className="form-field">
-          <button className="form-field" type="button">
-          Log In
-          </button>
-          </Link> */}
+       
           
       </form>
     </div>
