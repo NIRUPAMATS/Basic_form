@@ -29,7 +29,9 @@ class Navbar extends React.Component{
                         )
                     })}
                 </ul>
-                <button className='logout'>Log Out</button>
+                <Link to ='/'>
+                <button className='logout' >Log Out</button>
+                </Link>
             </nav>
         )
     }

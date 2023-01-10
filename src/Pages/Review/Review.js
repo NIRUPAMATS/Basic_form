@@ -7,10 +7,12 @@ import Footer from '../../components/Footer/Footer';
 
 function Review() {
     return (
-      <div className="Review">
+      <div>
         <Navbar/>
+      <div className="Review">
         <RatingStars/>
         <Footer/>
+      </div>
       </div>
     );
 }
