@@ -1,5 +1,6 @@
 import React from "react";
 import './Cards.css'
+import { Link } from 'react-router-dom';
 
 function Cards(){
     return(
@@ -18,11 +19,13 @@ function Cards(){
             </div>
             
               <p className="category">Business AC Room</p>
-              <span className="bed">Normal</span>
-              <p className="price">&#x20B9; 2600/per night</p>
+              <span className="bed">Small</span>
+              <p className="price">&#x20B9; 2600 per night</p>
 
               <div className="button-book">
-              <button className="book">Book Now!</button>
+                <Link to='/status1'>
+                <button className="book">Book Now!</button>
+                </Link>
             </div>
 
           </div>
@@ -37,10 +40,12 @@ function Cards(){
             
               <p className="category">Business AC Room</p>
               <span className="bed">Large Room</span>
-              <p className="price">&#x20B9; 3000/per night</p>
+              <p className="price">&#x20B9; 3000 per night</p>
 
               <div className="button-book">
-              <button className="book">Book Now!</button>
+                <Link to='/status2'>
+                <button className="book">Book Now!</button>
+                </Link>
             </div>
 
           </div>
@@ -55,10 +60,12 @@ function Cards(){
             
               <p className="category">Common AC Room</p>
               <span className="bed">Single Bed</span>
-              <p className="price">&#x20B9; 1500/per night</p>
+              <p className="price">&#x20B9; 1500 per night</p>
 
               <div className="button-book">
-              <button className="book">Book Now!</button>
+                <Link to='/status3'>
+                <button className="book">Book Now!</button>
+                </Link>
             </div>
 
           </div>
@@ -73,10 +80,12 @@ function Cards(){
             
               <p className="category">Common AC Room</p>
               <span className="bed">Double Bed</span>
-              <p className="price">&#x20B9; 2100/per night</p>
+              <p className="price">&#x20B9; 2100 per night</p>
 
               <div className="button-book">
-              <button className="book">Book Now!</button>
+                <Link to='/status4'>
+                <button className="book">Book Now!</button>
+                </Link>
             </div>
 
           </div>
@@ -91,10 +100,12 @@ function Cards(){
             
               <p className="category">Common Non AC Room</p>
               <span className="bed">Single Bed</span>
-              <p className="price">&#x20B9; 1100/per night</p>
+              <p className="price">&#x20B9; 1100 per night</p>
 
               <div className="button-book">
-              <button className="book">Book Now!</button>
+                <Link to='/status5'>
+                <button className="book">Book Now!</button>
+                </Link>
             </div>
 
           </div>
@@ -109,12 +120,13 @@ function Cards(){
             
               <p className="category">Common Non AC Room</p>
               <span className="bed">Double Bed</span>
-              <p className="price">&#x20B9; 1800/per night</p>
+              <p className="price">&#x20B9; 1800 per night</p>
 
               <div className="button-book">
-              <button className="book">Book Now!</button>
+                <Link to='/status6'>
+                <button className="book">Book Now!</button>
+                </Link>
             </div>
-
           </div>
           </div>
 

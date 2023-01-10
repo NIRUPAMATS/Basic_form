@@ -1,7 +1,6 @@
 import './Dashboard.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import Button from '../../components/Button';
 
 const data = [
 { slno: "Anom", email: 19, category: "Male", type: "Male", quantity: "Male", date: "Male"},

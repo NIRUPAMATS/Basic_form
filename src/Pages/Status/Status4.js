@@ -2,23 +2,18 @@
 import './Status.css';
 import React, { useState } from "react";
 import NumericInput from 'react-numeric-input';
-
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 
+const t1="Category : Common AC Room";
+const t2="Room Type : Double Bed";
+const t3="Room Cost : 2100 per night";
 
 
 
-
-const t1="Category:Business Class";
-const t2="Room Type:Double Bed";
-const t3="Room Cost: 1200";
-
-
-
-function Status() {
+function Status4() {
 
   const [startDate, setStartDate] = useState(new Date());
   const [startDate1, setStartDate1] = useState(new Date());
@@ -30,7 +25,7 @@ function Status() {
   
   
   return (
-    
+    <>
     <div className="Status">
         <Navbar/>
         <p>{t1}</p>  
@@ -45,17 +40,18 @@ function Status() {
 
          <DatePicker className="c1" selected={startDate1} onChange={(date:Date) => setStartDate1(date)} />
          <p className="s3">Room Want:</p>
-         <NumericInput className="fc"></NumericInput>
+         <NumericInput className="pc"></NumericInput>
 <p> </p>
          <button onClick={handleClick} className='b'>confirm booking</button>
-  <Footer/>
       </div>
+      <Footer/>
+      </>
   );
   
   }
 
 
-export default Status;
+export default Status4;
 
 
 

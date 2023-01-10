@@ -3,37 +3,32 @@ export const MenuItems=[
         title:'Home',
         url:'#',
         cName:'nav-links',
-        link:'/'
+        link:'/home'
     },
     {
         title:'History',
         url:'#',
         cName:'nav-links',
-        link:'/'
+        link:'/history'
     },
     {
         title:'Status',
         url:'#',
         cName:'nav-links',
-        link:'/'
+        link:'/dashboard'
     },
     {
         title:'Review',
         url:'#',
         cName:'nav-links',
-        link:'/'
+        link:'/review'
     },
-    {
-        title:'Contact Us',
-        url:'#',
-        cName:'nav-links',
-        link:'/'
-    },
+    
     {
         title:'Log out',
         url:'#',
         cName:'nav-links-mobile',
-        link:'/'
+        link:'/login'
     }
 
 ]

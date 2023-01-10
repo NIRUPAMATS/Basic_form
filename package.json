@@ -7,12 +7,10 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
+    "date-fns": "^2.29.3",
     "react": "^18.2.0",
-<<<<<<< HEAD
     "react-bootstrap-buttons": "^1.0.0",
-=======
     "react-datepicker": "^4.8.0",
->>>>>>> d7d566d80938557ca278d0cd3d99335d621d75cf
     "react-dom": "^18.2.0",
     "react-numeric-input": "^2.2.3",
     "react-router-dom": "^6.6.1",
