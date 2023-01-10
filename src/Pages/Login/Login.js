@@ -64,13 +64,8 @@ const handleSubmit=async(event)=>{
           {submitted && !values.pass? <span>Please enter password</span>: null}
         
 
-<<<<<<< HEAD
-          <Link to="/home">
-          <button class="form-field" type="button" >
-=======
-          
-          <button class="form-field" type="submit">
->>>>>>> 4c229a2b173cb62ac14b67a76c1ca8bbdc0debc9
+         
+          <button class="form-field" type="submit" >
           Log In
           </button>
           
