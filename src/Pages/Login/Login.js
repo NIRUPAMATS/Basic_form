@@ -27,6 +27,9 @@ const handleSubmit=async(event)=>{
    {
     window.location.replace('/home')
     localStorage.setItem("userid",retdata.user.id)
+    localStorage.setItem("name",retdata.user.name)
+    localStorage.setItem("phone",retdata.user.phone)
+    localStorage.setItem("email",retdata.user.email)
    }
    else{
     //ninghla endaan vecha kaatiko

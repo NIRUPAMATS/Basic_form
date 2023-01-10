@@ -7,7 +7,7 @@ import './Signup.css';
 export default function Signup() {
   const [values,setValues]=useState({
     name:"",
-    ph:"",
+    phone:"",
     ad:"aaaaa",
     email:"",
     pass:"",
@@ -23,7 +23,7 @@ const inputEmail=(event)=>{
   setValues({...values,email:(event.target.value)})
 }
 const inpuPhoneNumber=(event)=>{
-  setValues({...values,ph:(event.target.value)})
+  setValues({...values,phone:(event.target.value)})
 }
 const inputPassword=(event)=>{
     setValues({...values,pass:(event.target.value)})
@@ -70,7 +70,7 @@ const handleSubmit=async(event)=>{
           placeholder="Phone Number"
           name="phoneNumber"
         />
-          {submitted && !values.phoneNumber? <span>Please enter phone number</span>: null}
+          {submitted && !values.phone? <span>Please enter phone number</span>: null}
           
           <input
           id="email"
@@ -92,7 +92,7 @@ const handleSubmit=async(event)=>{
           placeholder="Password"
           name="password"
         />
-          {submitted && !values.password? <span>Please enter password</span>: null}
+          {submitted && !values.pass? <span>Please enter password</span>: null}
         
           
           <button class="form-field" type="submit">
