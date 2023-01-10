@@ -20,8 +20,9 @@ function Status1() {
   
  async function  handleClick ()
  {
+    const userid=localStorage.getItem('userid')
     const values={
-        userid:2,
+        userid:userid,
         category:t1,
         bed:t2,
         type:"AC",
