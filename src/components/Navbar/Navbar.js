@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { useHistory} from 'react-router-dom';
+import { Link, useHistory} from 'react-router-dom';
 import {MenuItems} from './MenuItems'
 import './Navbar.css'
-import {Button} from '../Button'
 
 class Navbar extends React.Component{  
     state={clicked:false}
@@ -21,14 +20,16 @@ class Navbar extends React.Component{
                     {MenuItems.map((item,index)=>{
                         return(
                             <li key={index}>
+                                <Link to={item.link}>
                                 <a className={item.cName} href={item.url}>
                                     {item.title}
                                 </a>
+                                </Link>
                             </li>
                         )
                     })}
                 </ul>
-                <Button>Log Out</Button>
+                <button className='logout'>Log Out</button>
             </nav>
         )
     }

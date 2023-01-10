@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .body {
+  height: 650px;;
   background: linear-gradient(90deg,rgb(85, 111, 255)0%,rgb(113, 222, 219)100%);
   display: flex;
-  min-height: 90vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -36,6 +37,7 @@
 }
 
 .form-field {
+  width: 400px;
   margin: 5px 0 10px 0;
   padding: 15px;
   font-size: 16px;
