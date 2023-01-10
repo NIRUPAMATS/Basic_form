@@ -1,31 +1,25 @@
 import './History.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import { useEffect, useState } from 'react';
+import postrequest from "../../Backend/postrequest";
+import { async } from 'q';
 
-const data = [
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male"},
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-// { name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-{ name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-{ name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-{ name: "Anom", date: 19, category: "Male", type: "Male", status: "Male" },
-]
 
-function History() {
+const History=()=> {
+    const [data,setdata] = useState([])
+    useEffect(()=>{
+        console.log("hy")
+       getdata()
+    },[])
+
+
+    const getdata=async()=>{
+        const values={userid:2}
+        const{retdata:retdata}=await postrequest(`${window.name}bookroom`,values);
+        console.log(retdata)
+        setdata(retdata)
+    }
   return (
     <div className="App">
       <Navbar/>
@@ -39,7 +33,7 @@ function History() {
         <th>Type</th>
         <th>Status</th>
         </tr>
-        {data.map((val, key) => {
+        {/* {data && data.map((val, key) => {
         return (
           <tr key={key}>
           <td>{val.name}</td>
@@ -49,7 +43,7 @@ function History() {
           <td>{val.status}</td>
           </tr>
         )
-        })}
+        })} */}
         </table>
       </div>
       <Footer/>

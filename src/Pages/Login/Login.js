@@ -20,12 +20,13 @@ const inputPassword=(event)=>{
 const handleSubmit=async(event)=>{
   event.preventDefault()
   setSubmitted(true)
-  //console.log(values)
+  console.log(values)
   const{retdata:retdata}=await postrequest(`${window.name}login`,values)
   console.log(retdata.status)
    if(retdata.status==="Success")
    {
     window.location.replace('/home')
+    localStorage.setItem("userid",retdata.user.id)
    }
    else{
     //ninghla endaan vecha kaatiko

@@ -1,31 +1,47 @@
+import { async } from "q";
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
+import postrequest from "../../Backend/postrequest";
 import './Signup.css';
 
 export default function Signup() {
   const [values,setValues]=useState({
-    username:"",
-    phoneNumber:"",
+    name:"",
+    ph:"",
+    ad:"aaaaa",
     email:"",
-    password:"",
+    pass:"",
+    age:20,
+    pass:""
 })
 const [submitted,setSubmitted]=useState(false)
 
 const inputUsername=(event)=>{
-  setValues({...values,username:(event.target.value)})
+  setValues({...values,name:(event.target.value)})
 }
 const inputEmail=(event)=>{
   setValues({...values,email:(event.target.value)})
 }
 const inpuPhoneNumber=(event)=>{
-  setValues({...values,phoneNumber:(event.target.value)})
+  setValues({...values,ph:(event.target.value)})
 }
 const inputPassword=(event)=>{
-    setValues({...values,password:(event.target.value)})
+    setValues({...values,pass:(event.target.value)})
   }
-const handleSubmit=(event)=>{
+const handleSubmit=async(event)=>{
   event.preventDefault()
   setSubmitted(true)
+  console.log(values)
+  const{retdata:retdata}=await postrequest(`${window.name}signup`,values);
+ console.log(retdata)
+ if(retdata.status="success")
+ {
+    window.location.replace("/")
+    
+ }
+ else{
+    /////
+ }
 }
   return (
     <div className="body">
@@ -36,18 +52,18 @@ const handleSubmit=(event)=>{
         <h2 className="head" >Sign Up</h2>
         <input
           id="username"
-          value={values.username}
+          value={values.name}
           onChange={inputUsername}
           class="form-field"
           type="text"
           placeholder="Username"
           name="username"
         />
-          {submitted && !values.username? <span>Please enter username</span>: null}
+          {submitted && !values.name? <span>Please enter username</span>: null}
           
         <input
           id="phoneNumber"
-          value={values.phoneNumber}
+          value={values.ph}
           onChange={inpuPhoneNumber}
           class="form-field"
           type="text"
@@ -78,11 +94,11 @@ const handleSubmit=(event)=>{
         />
           {submitted && !values.password? <span>Please enter password</span>: null}
         
-          <Link to="/home">
+          
           <button class="form-field" type="submit">
           Sign Up
         </button>
-          </Link>
+          
       </form>
     </div>
     </div>

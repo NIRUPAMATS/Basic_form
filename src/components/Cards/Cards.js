@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Cards.css'
 import { Link } from 'react-router-dom';
 
 function Cards(){
+ 
     return(
       
         <div className="card-body">

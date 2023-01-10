@@ -1,4 +1,4 @@
-
+import postrequest from "../../Backend/postrequest";
 import './Status.css';
 import React, { useState } from "react";
 import NumericInput from 'react-numeric-input';
@@ -6,11 +6,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import GetRequestwithData from '../../Backend/getrequestwithdata';
 
-const t1="Category : Business AC Room";
-const t2="Room Type : Small";
+const t1="Business Class";
+const t2="Small";
 const t3="Room Cost : 2600 per night";
-
 
 
 function Status1() {
@@ -18,9 +18,29 @@ function Status1() {
   const [startDate, setStartDate] = useState(new Date());
   const [startDate1, setStartDate1] = useState(new Date());
   
- function handleClick()
+ async function  handleClick ()
  {
-  alert("Booking Confirmed!")
+    const values={
+        userid:2,
+        category:t1,
+        bed:t2,
+        type:"AC",
+        checkin:startDate,
+        checkout:startDate1,
+        no:1
+        
+    }
+    console.log(values)
+    const{retdata:retdata}=await postrequest(`${window.name}bookroom`,values);
+   console.log(retdata.status)
+   if(retdata.status==="Success")
+{
+    alert("Booking Confirmed!")
+}
+else{
+    ////
+}
+  
  }
   
   

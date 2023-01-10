@@ -3,8 +3,9 @@ const GetRequestwithData = async (url, data) => {
     method: "GET",
     body: JSON.stringify(data),
   });
-  const d = res.json();
-  return d;
+  console.log(res)
+  const retdata = res.json();
+  return retdata;
 };
 
 export default GetRequestwithData;
