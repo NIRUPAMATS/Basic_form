@@ -7,7 +7,9 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 //import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-window.name="http://localhost:8000/"
+//window.name="http://localhost:8000/"
+window.name="https://hm-test.vercel.app/"
+
 root.render(
   <Router>
     <App />
