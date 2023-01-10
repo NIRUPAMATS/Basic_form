@@ -1,0 +1,75 @@
+.Status{
+    text-align: center;
+    color: rgb(78, 66, 147);
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 15px;
+    margin-top: 100px;
+  }
+  
+  
+  .t1{
+    color:rgb(74, 129, 103);
+  }
+  
+  .c{
+  text-align: center; 
+  text-shadow: 10px;
+  height:30px;
+  width: 150px;
+  font-size: 20px;
+  }
+  
+  .c1{
+    text-align: center; 
+    height:30px;
+    width: 150px;
+    text-shadow: 10px;
+    font-size: 20px;
+    }
+  
+  .s1{
+    color: black;
+    font-weight: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+  }
+  
+  .fc{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-size: 1px;
+  }
+  
+  
+  .s2{
+    color: black;
+    font-weight: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+  }
+  
+  
+  .s3{
+    color: black;
+    font-weight: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+  }
+  
+  .b{
+    margin-top: 30px;
+    background-color: rgb(232, 174, 51);
+    height: 40px;
+    width: 180px;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 25px;
+    
+  }
